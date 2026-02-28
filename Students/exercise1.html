@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4 - Exercise 1</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <input type="text" id="textInput" placeholder="Type something here...">
+        <label id="textLabel"></label>
+        <button id="redButton" style="color: red;">Red</button>
+        <button id="blueButton" style="color:blue;">Blue</button>
+        <button id="greenButton" style="color:green;">Green</button>
+        <button id="orangeButton" style="color:orange;">Orange</button>
+        <button id="purpleButton" style="color:purple;">Purple</button>
+    </div>
+    
+</body>
+
+<script type="text/javascript">
+
+var inputBox = document.getElementById("textInput");
+var labelT = document.getElementById("textLabel");
+var redButton = document.getElementById("redButton");
+var blueButton = document.getElementById("blueButton");
+var greenButton = document.getElementById("greenButton");
+var orangeButton = document.getElementById("orangeButton");
+var purpleButton = document.getElementById("purpleButton");
+
+inputBox.addEventListener("keypress", function(event){
+
+    if (event.key == "Enter"){
+        console.log("Testing Enter");
+        labelT.textContent = inputBox.value;
+    }
+}
+)
+
+redButton.addEventListener("click", function(event){
+    console.log("Click");
+    labelT.style.color = "red";
+})
+
+blueButton.addEventListener("click", function(event){
+    console.log("Click");
+    labelT.style.color = "blue";
+})
+
+
+orangeButton.addEventListener("click", function(event){
+    console.log("Click");
+    labelT.style.color = "orange";
+})
+
+
+greenButton.addEventListener("click", function(event){
+    console.log("Click");
+    labelT.style.color = "green";
+})
+
+
+purpleButton.addEventListener("click", function(event){
+    console.log("Click");
+    labelT.style.color = "purple";
+})
+
+</script>
+
+
+</html>
